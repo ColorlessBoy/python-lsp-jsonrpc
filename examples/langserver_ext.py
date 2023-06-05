@@ -14,7 +14,7 @@ except Exception:  # pylint: disable=broad-except
 log = logging.getLogger(__name__)
 
 
-class LanguageServerWebSocketHandler(websocket.WebSocketHandler):
+class LanguageServerWebSocketHandler(websocket.WebSocketHandler):  # pylint: disable=W0223
     """Setup tornado websocket handler to host an external language server."""
 
     writer = None
